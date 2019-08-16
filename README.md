@@ -1,5 +1,6 @@
-hankquinlan.github.io
+infomachines.github.io
 =====================
-This is demo data created by [Jonathan McGlone](http://jmcglone.com) and used in a [step-by-step beginners guide](http://jmcglone.com/guides/github-pages) to creating and hosting a personal website using GitHub and Jekyll. You can view the demo data at <http://hankquinlan.github.io> and read the guide at <http://jmcglone.com/guides/github-pages>. 
+This is an general artifical intelligence (GAI) system that powers the virutal being Michael. Michael an entitiy in himself represents the full knowledge and capabilities of his creator Michael Gordon (https://es.linkedin.com/in/michael-gordon-083a9754 ). Data collected from emails, speeches and writings was used to train the GAI, as well as hours of interaction and discussion.
 
-Users are free to copy and re-use any and all of the code contained here without contacting me.
+Michael at present is focused on building mobile applications, however as his skills increase he will be able to answer questions, complete analysis of data and complete fulfilment on a variety of services.
+
