@@ -10,3 +10,8 @@
       padding:15px;
       padding-left:21px;
 }
+
+body {
+ background-image: url("paper.gif");
+ background-color: #cccccc;
+}
