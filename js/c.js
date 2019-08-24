@@ -37,18 +37,19 @@ Ajax Contact Form
         $.ajax({
             type : 'POST',
             url  : 'https://usebasin.com/f/7d5c23f52d76',
-            data : formData
-
-        }).done(function (data,status) {
+            data : formData,
+            dataType : 'json',
+            encode : true
+        }).done(function (data) {
             
-            console.log("loggin");            
-            console.log(data);
-            console.log(status);
+            console.log("loggin");            console.log(data);
             console.log("logged");
+                        
+            // display success message
+            $form.html('<div class="alert alert-success">We will be in contact</div>');
        
             // handle errors
-            if (status!="success") {
-            
+            if (!data.success) {
                 if (data.errors.name) {
                     $('#name-field').addClass('has-error');
                     $('#name-field').find('.col-lg-10').append('<span class="help-block">' + data.errors.name + '</span>');
@@ -69,9 +70,7 @@ Ajax Contact Form
                     $('#message-field').find('.col-lg-10').append('<span class="help-block">' + data.errors.message + '</span>');
                 }
             } else {
-                $("#contact-form-env").html("<h1>Thank you for your interest, we will be in contact</h1>");
             }
-          
         }).fail(function (data) {
             // for debug
             console.log("failed");
